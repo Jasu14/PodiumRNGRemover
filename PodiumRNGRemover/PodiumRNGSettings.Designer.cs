@@ -20,7 +20,6 @@ namespace PodiumRNGRemover
             this.lblKey2 = new System.Windows.Forms.Label();
             this.lblKey3 = new System.Windows.Forms.Label();
             this.lblKey4 = new System.Windows.Forms.Label();
-            this.lblInfo = new System.Windows.Forms.Label();
             this.lblDescription = new System.Windows.Forms.Label();
             this.lblCredit = new System.Windows.Forms.Label();
             this.txtKey1 = new System.Windows.Forms.TextBox();
@@ -36,17 +35,11 @@ namespace PodiumRNGRemover
             this.lblTitle.Size = new System.Drawing.Size(200, 20);
             this.lblTitle.Text = "Podium RNG Remover Settings";
             
-            this.lblInfo.AutoSize = true;
-            this.lblInfo.Location = new System.Drawing.Point(15, 40);
-            this.lblInfo.Name = "lblInfo";
-            this.lblInfo.Size = new System.Drawing.Size(250, 13);
-            this.lblInfo.Text = "Key 1: No deduction | Key 2: -2.3s | Key 3: -3.3s";
-            
             this.lblKey1.AutoSize = true;
             this.lblKey1.Location = new System.Drawing.Point(15, 70);
             this.lblKey1.Name = "lblKey1";
             this.lblKey1.Size = new System.Drawing.Size(120, 13);
-            this.lblKey1.Text = "Key 1 (No deduction):";
+            this.lblKey1.Text = "Key 1 (Good podium):";
             
             this.txtKey1.Location = new System.Drawing.Point(140, 67);
             this.txtKey1.Name = "txtKey1";
@@ -56,7 +49,7 @@ namespace PodiumRNGRemover
             this.lblKey2.Location = new System.Drawing.Point(15, 100);
             this.lblKey2.Name = "lblKey2";
             this.lblKey2.Size = new System.Drawing.Size(100, 13);
-            this.lblKey2.Text = "Key 2 (-2.3s):";
+            this.lblKey2.Text = "Key 2 (Medium podium):";
             
             this.txtKey2.Location = new System.Drawing.Point(140, 97);
             this.txtKey2.Name = "txtKey2";
@@ -66,7 +59,7 @@ namespace PodiumRNGRemover
             this.lblKey3.Location = new System.Drawing.Point(15, 130);
             this.lblKey3.Name = "lblKey3";
             this.lblKey3.Size = new System.Drawing.Size(100, 13);
-            this.lblKey3.Text = "Key 3 (-3.3s):";
+            this.lblKey3.Text = "Key 3 (Bad podium):";
             
             this.txtKey3.Location = new System.Drawing.Point(140, 127);
             this.txtKey3.Name = "txtKey3";
@@ -76,7 +69,7 @@ namespace PodiumRNGRemover
             this.lblKey4.Location = new System.Drawing.Point(15, 160);
             this.lblKey4.Name = "lblKey4";
             this.lblKey4.Size = new System.Drawing.Size(100, 13);
-            this.lblKey4.Text = "Key 4 (Reset deduction):";
+            this.lblKey4.Text = "Key 4 (No podium):";
             
             this.txtKey4.Location = new System.Drawing.Point(140, 157);
             this.txtKey4.Name = "txtKey4";
@@ -106,7 +99,6 @@ namespace PodiumRNGRemover
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.lblTitle);
-            this.Controls.Add(this.lblInfo);
             this.Controls.Add(this.lblKey1);
             this.Controls.Add(this.txtKey1);
             this.Controls.Add(this.lblKey2);

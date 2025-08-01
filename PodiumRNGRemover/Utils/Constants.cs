@@ -42,7 +42,7 @@ namespace PodiumRNGRemover.Utils
         {
             public const string TITLE_TEXT = "Podium RNG";
             public const string CURRENT_SPLIT_PREFIX = "Current Split: ";
-            public const string NO_DEDUCTION_TEXT = "No deduction";
+            public const string NO_DEDUCTION_TEXT = "No Podium";
             public const string GOOD_PODIUM_TEXT = "Good Podium";
             public const string MEDIUM_PODIUM_FORMAT = "Medium Podium (-{0}s)";
             public const string BAD_PODIUM_FORMAT = "Bad Podium (-{0}s)";
