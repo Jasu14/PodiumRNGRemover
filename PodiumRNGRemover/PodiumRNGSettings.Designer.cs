@@ -76,7 +76,7 @@ namespace PodiumRNGRemover
             this.lblKey4.Location = new System.Drawing.Point(15, 160);
             this.lblKey4.Name = "lblKey4";
             this.lblKey4.Size = new System.Drawing.Size(100, 13);
-            this.lblKey4.Text = "Key 4 (Cancel):";
+            this.lblKey4.Text = "Key 4 (Reset deduction):";
             
             this.txtKey4.Location = new System.Drawing.Point(140, 157);
             this.txtKey4.Name = "txtKey4";
@@ -93,7 +93,7 @@ namespace PodiumRNGRemover
                 "• Medium Podium: -2.3 seconds\n" +
                 "• Bad Podium: -3.3 seconds\n\n" +
                 "Time will be deducted when you split or skip split. " +
-                "You can cancel the selection with the Cancel key.";
+                "You can reset the selection with the Reset key.";
             
             this.lblCredit.AutoSize = true;
             this.lblCredit.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Italic);

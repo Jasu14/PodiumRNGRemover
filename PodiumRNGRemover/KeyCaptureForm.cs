@@ -29,7 +29,7 @@ namespace PodiumRNGRemover
             
             var label = new Label
             {
-                Text = "Press any key or key combination\n(ESC to cancel)",
+                Text = "Press any key or key combination\n(ESC to reset)",
                 TextAlign = ContentAlignment.MiddleCenter,
                 Dock = DockStyle.Fill,
                 Font = new Font("Microsoft Sans Serif", 10F, FontStyle.Regular)
@@ -43,7 +43,7 @@ namespace PodiumRNGRemover
         {
             if (keyData == Keys.Escape)
             {
-                this.DialogResult = DialogResult.Cancel;
+                this.DialogResult = DialogResult.Reset;
                 this.Close();
                 return true;
             }
