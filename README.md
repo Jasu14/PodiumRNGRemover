@@ -1,5 +1,3 @@
-# PodiumRNGRemover
-
 ## How to set it up
 
 Download the newest Release from the "Releases" Section up top.
