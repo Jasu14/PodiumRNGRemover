@@ -43,7 +43,7 @@ namespace PodiumRNGRemover
         {
             if (keyData == Keys.Escape)
             {
-                this.DialogResult = DialogResult.Reset;
+                this.DialogResult = DialogResult.Cancel;
                 this.Close();
                 return true;
             }
