@@ -271,6 +271,18 @@ namespace PodiumRNGRemover
                 foreach (var kvp in unappliedDeductions)
                 {
                     totalToRestore += kvp.Value;
+                    
+                    if (kvp.Key >= 0 && kvp.Key < state.Run.Count)
+                    {
+                        var split = state.Run[kvp.Key];
+                        if (split.SplitTime.GameTime != null)
+                        {
+                            split.SplitTime = new Time(
+                                split.SplitTime.RealTime,
+                                split.SplitTime.GameTime + TimeSpan.FromSeconds(kvp.Value)
+                            );
+                        }
+                    }
                 }
                 
                 DeductionProcessor.RestoreDeductionToGameTime(state, totalToRestore);

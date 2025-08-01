@@ -31,6 +31,19 @@ namespace PodiumRNGRemover.Utils
             {
                 float deduction = rngState.GetPendingDeduction(splitIndex);
                 ApplyDeductionToGameTime(state, deduction);
+                
+                if (splitIndex >= 0 && splitIndex < state.Run.Count)
+                {
+                    var split = state.Run[splitIndex];
+                    if (split.SplitTime.GameTime != null)
+                    {
+                        split.SplitTime = new Time(
+                            split.SplitTime.RealTime,
+                            split.SplitTime.GameTime - TimeSpan.FromSeconds(deduction)
+                        );
+                    }
+                }
+                
                 rngState.ApplyDeduction(splitIndex);
             }
         }
